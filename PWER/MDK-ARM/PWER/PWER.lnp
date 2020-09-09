@@ -1,0 +1,26 @@
+--cpu Cortex-M4.fp
+"pwer\stm32f4xx_hal_msp.o"
+"pwer\tim.o"
+"pwer\stm32f4xx_it.o"
+"pwer\gpio.o"
+"pwer\main.o"
+"pwer\stm32f4xx_hal_rcc_ex.o"
+"pwer\stm32f4xx_hal_flash_ex.o"
+"pwer\stm32f4xx_hal_dma.o"
+"pwer\stm32f4xx_hal_flash.o"
+"pwer\stm32f4xx_hal_pwr.o"
+"pwer\stm32f4xx_hal_cortex.o"
+"pwer\stm32f4xx_hal_tim.o"
+"pwer\stm32f4xx_hal_flash_ramfunc.o"
+"pwer\stm32f4xx_hal_rcc.o"
+"pwer\stm32f4xx_hal_pwr_ex.o"
+"pwer\stm32f4xx_hal_tim_ex.o"
+"pwer\stm32f4xx_hal.o"
+"pwer\stm32f4xx_hal_gpio.o"
+"pwer\stm32f4xx_hal_dma_ex.o"
+"pwer\startup_stm32f429xx.o"
+"pwer\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "PWER\PWER.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWER.map" -o PWER\PWER.axf
