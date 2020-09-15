@@ -206,9 +206,9 @@ void EXTI15_10_IRQHandler(void)
 /* USER CODE BEGIN 1 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_PIN)
 {
-    if(GPIO_PIN==KEY0_Pin) TIM_SetTIM3Compare4(12);
-    else if(GPIO_PIN==KEY1_Pin) TIM_SetTIM3Compare4(15);
-  else if(GPIO_PIN==KEY2_Pin) TIM_SetTIM3Compare4(17);
+    if(GPIO_PIN==KEY0_Pin) TIM_SetTIM3Compare4(100);
+    else if(GPIO_PIN==KEY1_Pin) TIM_SetTIM3Compare4(150);
+  else if(GPIO_PIN==KEY2_Pin) TIM_SetTIM3Compare4(200);
 }
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"int_capture\system_stm32f4xx.o"
+"int_capture\main.o"
+"int_capture\stm32f4xx_hal_msp.o"
+"int_capture\gpio.o"
+"int_capture\stm32f4xx_it.o"
+"int_capture\tim.o"
+"int_capture\usart.o"
+"int_capture\stm32f4xx_hal_rcc.o"
+"int_capture\stm32f4xx_hal_tim_ex.o"
+"int_capture\stm32f4xx_hal_rcc_ex.o"
+"int_capture\stm32f4xx_hal_cortex.o"
+"int_capture\stm32f4xx_hal_tim.o"
+"int_capture\stm32f4xx_hal_flash.o"
+"int_capture\stm32f4xx_hal.o"
+"int_capture\stm32f4xx_hal_flash_ex.o"
+"int_capture\stm32f4xx_hal_pwr_ex.o"
+"int_capture\stm32f4xx_hal_dma_ex.o"
+"int_capture\stm32f4xx_hal_dma.o"
+"int_capture\stm32f4xx_hal_flash_ramfunc.o"
+"int_capture\stm32f4xx_hal_gpio.o"
+"int_capture\stm32f4xx_hal_pwr.o"
+"int_capture\stm32f4xx_hal_uart.o"
+"int_capture\startup_stm32f429xx.o"
+--library_type=microlib --strict --scatter "INT_CAPTURE\INT_CAPTURE.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "INT_CAPTURE.map" -o INT_CAPTURE\INT_CAPTURE.axf
